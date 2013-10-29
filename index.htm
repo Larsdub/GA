@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="description" content="Groenapps">
+    <meta name="author" content="Lars van Houwelingen">
+    <link rel="apple-touch-icon" href="lj.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="lj.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="lj.png">
+
+   <script type="text/javascript"> 
+ 
+    var addToHomeConfig = {
+      message: 'Je hebt een <strong>%device</strong>. Voeg Groenapps toe aan je Homescreen met de %icon Button.'
+};
+ 
+</script>
+ 
+    <link rel="stylesheet" href="add2home.css">
+    <script type="application/javascript" src="add2home.js" charset="utf-8"></script>
+
+
+
+    <title>Groenapps</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/social-buttons.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Groenapps</a></li>
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="PTA.htm">PTA's</a></li>
+          <li><a href="tentamen.htm">Tentamenrooster</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#">Contact</a></li>
+          <a class="btn btn-twitter" href="http://twitter.com/larspls"><i class="icon-twitter"></i> | Find me on Twitter</a>
+      </ul>
+      </div>
+          
+      <!-- Content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>
+            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+            Home
+          </h1>
+        </div>
+        <!-- Content in deze DIV -->
+        <div class="page-content inset">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="lead">Tijdelijke Groenapps.</p>
+            </div>
+            <div class="col-md-6">
+              <p class="well">PTA's en Tentamenroosters zijn nu te vinden via het menu.
+              
+              </p>
+               <div class="col-md-12">
+              <p class="well">Omdat de roosters nog niet zijn bijgewerkt zal Groenapps niet werken, Je kan wel wennen aan het nieuwe design.
+            
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+	
+    <!-- Bootstrap core JavaScript -->
+    <!-- Geplaatst op het einde zodat die sneller laad. -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Dit is custom JS zetten om het netjes te houden. -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>
