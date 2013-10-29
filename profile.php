@@ -40,11 +40,14 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <li class="sidebar-brand"><a href="#">Groenapps</a></li>
+          <li class="sidebar-brand"><a href="#">Hey, <?php echo $_SESSION['user_name']; ?>!</a></li>
           <li><a href="index.php">Home</a></li>
           <li><a href="PTA.htm">PTA's</a></li>
           <li><a href="tentamen.htm">Tentamenrooster</a></li>
-          <a href="#fakelink" class="btn btn-small btn-social-twitter">
+          <hr>
+          <li><a href="#">LLNummer: <?php echo $_SESSION['user_email']; ?></li>
+          <br>
+          <a href="http://m.twitter.com/larspls" class="btn btn-small btn-social-twitter">
             <i class="fui-twitter"></i>
             Connect with Twitter
           </a>
@@ -57,7 +60,7 @@
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
             Home
-             <a class="btn btn-primary" href="login.php">Login</a>
+            <a class="btn btn-primary" href="index.php?logout">Logout</a>
           </h1>
         </div>
         <!-- Content in deze DIV -->

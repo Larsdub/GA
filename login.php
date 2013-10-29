@@ -41,10 +41,10 @@
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand"><a href="#">Groenapps</a></li>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="index.htm">Home</a></li>
           <li><a href="PTA.htm">PTA's</a></li>
           <li><a href="tentamen.htm">Tentamenrooster</a></li>
-          <a href="#fakelink" class="btn btn-small btn-social-twitter">
+           <a href="#fakelink" class="btn btn-small btn-social-twitter">
             <i class="fui-twitter"></i>
             Connect with Twitter
           </a>
@@ -56,35 +56,28 @@
         <div class="content-header">
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            Home
-             <a class="btn btn-primary" href="login.php">Login</a>
+            Login
           </h1>
         </div>
         <!-- Content in deze DIV -->
         <div class="page-content inset">
           <div class="row">
-            <center>
-              <div><img src="img/Watches.png" alt=""></div>
-              <p class="well">Altijd op tijd in het goede lokaal, nooit meer niet weten waar je zit. (Tenzij je Groenapps niet checkt.)
-              </p>
-              <div><img src="img/Mortarboard.png" alt=""></div>
-              <p class="well">Help elkaar door vragen te stellen en te beantwoorden zodat iedereen makkelijk hogere cijfers haalt.
-              </p>
-              <div><img src="img/Clipboard.png" alt=""></div>
-              <p class="well">Houd makkelijk je taken bij, zoals je huiswerk en andere opdrachten. Makkelijk en overzichtelijk te zien.
-              </p>
-            </center>
-          </div>
-        </div>
-        <!-- footer -->
-        <div class="span2">
-              <ul class="bottom-icons">
-                <div class="demo-col">
-                <li><a href="http://facebook.com/larsjeremy" class="fui-facebook"></a></li>
-                <li><a href="http://twitter.com/larspls" class="fui-twitter"></a></li>
-              </ul>
-            </div>
-            </div>
+
+<form method="post" action="index.php" name="loginform">
+
+    <label for="login_input_username">Username</label>
+    <input id="login_input_username" class="login_input" type="text" name="user_name" required />
+
+    <label for="login_input_password">Password</label>
+    <input id="login_input_password" class="login_input" type="password" name="user_password" autocomplete="off" required />
+
+    <input class="btn btn-primary" type="submit"  name="login" value="Log in" />
+
+</form>
+  
+    <a href="registreer.php">Registreer nieuw account.</a>
+
+      </div>
       
     </div>
 	
